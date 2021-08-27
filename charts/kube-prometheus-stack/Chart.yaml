@@ -37,11 +37,11 @@ annotations:
 dependencies:
 - name: kube-state-metrics
   version: "3.4.*"
-  repository: https://prometheus-community.github.io/helm-charts
+  repository: https://github.com/JuniorDevil/monitoring
   condition: kubeStateMetrics.enabled
 - name: prometheus-node-exporter
   version: "2.0.*"
-  repository: https://prometheus-community.github.io/helm-charts
+  repository: https://github.com/JuniorDevil/monitoring
   condition: nodeExporter.enabled
 - name: grafana
   version: "6.15.*"
